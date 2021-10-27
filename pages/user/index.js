@@ -97,7 +97,7 @@ const Users = ({ users }) => {
                     <td>{data.firstname}</td>
                     <td>{data.lastname}</td>
                     <td>{data.username}</td>
-                    <td className="text-center"><Link href={`user/edit/${data.id}`}><a className="btn btn-warning btn-sm">แก้ไข</a></Link></td>
+                    <td className="text-center"><Link href={`/users/edit/${data.id}`}><a className="btn btn-warning btn-sm">แก้ไข</a></Link></td>
                     {/* <td className="text-center"><Link href={`/users/delete/${data.id}`}><a className="btn btn-danger btn-sm">ลบ</a></Link></td> */}
                     <td className="text-center"><button type="button" className="btn btn-danger btn-sm" onClick={() => { deleteUser(data.id)}}>ลบ</button></td>
                   </tr>
